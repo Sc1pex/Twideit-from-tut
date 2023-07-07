@@ -1,4 +1,5 @@
 import SubscribeLeaveToggle from "@/components/SubscribeLeaveToggle";
+import ToFeedButton from "@/components/ToFeedButton";
 import { INFINITE_SCROLL_GET_COUNT } from "@/constants";
 import { getAuthSession } from "@/lib/auth";
 import { prisma } from "@/lib/db";
@@ -57,6 +58,8 @@ const Layout = async ({
   return (
     <div className="container max-w-7xl h-full pt-12">
       <div>
+        <ToFeedButton />
+
         <div className="grid grid-cols-3 gap-y-4 gap-x-4 px-6">
           <div className="flex flex-col col-span-2 space-y-6">{children}</div>
 
