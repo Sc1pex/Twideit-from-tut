@@ -1,0 +1,2 @@
+export const INFINITE_SCROLL_GET_COUNT = 2;
+export const CACHE_AFTER_VOTESCORE = 1;
